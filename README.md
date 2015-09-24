@@ -2,19 +2,7 @@
 
 The following is a file Loader script that tweaks the existing sklearn.datasets load_files function to recursively load nested directory structure.
 The Following script expects you to have installed sklearn. If not already installed do a : pip install sklearn or sudo pip install sklearn
-Load text files with categories as subfolder names. Individual samples are assumed to be files stored a heirarchical folder structure such as the following:
-    container_folder/
-        Intermediate_folder1/......
-            category_1_folder/
-                file_1.txt
-                file_2.txt
-                ...
-                file_42.txt
-        Intermediate_folder1/......
-            category_2_folder/
-                file_43.txt
-                file_44.txt
-            ...
+Load text files with categories as subfolder names. Individual samples are assumed to be files stored a heirarchical folder structure 
 The folder names are used as supervised signal label names. The
 individual file names are not important.
 This function does not try to extract features into a numpy array or
